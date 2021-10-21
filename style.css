@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    padding: 0%;
+    margin: 0%;
+    background-color: hsl(0, 0%, 98%);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.part-one {
+    text-align: center;
+    margin-top: 30px;
+}
+.part-one h1 span {
+    color: rgb(89, 89, 89);
+    font-weight: 400;
+    display: block;
+}
+.part-one p {
+    color: gray;
+    width: 500px;
+    margin: 0 auto 50px;
+}
+.part-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.part-two .card {
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px 30px 20px;
+    width: 300px;
+}
+.card.orange {
+    box-shadow: 0px 11px 10px 0px rgba(0,0,0,0.2),
+    0px -5px 0px -1px hsl(34, 97%, 64%);
+}
+.card.cyan {
+    box-shadow: 0px 11px 10px 0px rgba(0,0,0,0.2),
+    0px -5px 0px -1px hsl(180, 62%, 55%);
+}
+.card.blue  {
+    box-shadow: 0px 11px 10px 0px rgba(0,0,0,0.2),
+    0px -5px 0px -1px hsl(212, 86%, 64%);
+}
+.card.red {
+    box-shadow: 0px -5px 0px -1px hsl(0, 78%, 62%),
+    0px 11px 10px 0px rgba(0,0,0,0.2);
+}
+.card p {
+    color: gray;
+    margin-bottom: 50px;
+}
+.part-two .card img {
+    margin-left: 230px;
+}
+.part-two .middle-cards {
+    display: flex;
+    flex-direction: column;
+    
+}
+@media (max-width: 1143px) {
+    #middle-cards {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
